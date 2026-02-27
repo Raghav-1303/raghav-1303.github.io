@@ -29,16 +29,16 @@ function Main() {
                variant="contained"
                startIcon={<DownloadIcon />}
                className="download-btn"
-               href="/Raghava_M_Senior_FullStack_Developer.pdf"
-               download
+               href={process.env.PUBLIC_URL + "RAGHAVA_RESUME_.pdf"}
+               download="RAGHAV_RESUME_.pdf"
                onMouseMove={(e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    e.currentTarget.style.setProperty("--x", `${x}px`);
-    e.currentTarget.style.setProperty("--y", `${y}px`);
-  }}
->
+               const rect = e.currentTarget.getBoundingClientRect();
+               const x = e.clientX - rect.left;
+               const y = e.clientY - rect.top;
+              e.currentTarget.style.setProperty("--x", `${x}px`);
+              e.currentTarget.style.setProperty("--y", `${y}px`);
+    }}
+              >
                
                Download Resume
              </Button>

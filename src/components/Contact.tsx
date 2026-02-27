@@ -8,8 +8,7 @@ function Contact() {
   return (
     <div id="contact" className="contact-section">
       <div className="contact_wrapper">
-        <h1>Contact Me</h1>
-        <p>Feel free to reach out to me directly.</p>
+        <h1>Contact Details</h1>
 
         <div className="contact-details">
 
