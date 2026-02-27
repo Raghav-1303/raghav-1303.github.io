@@ -29,7 +29,7 @@ function Main() {
                variant="contained"
                startIcon={<DownloadIcon />}
                className="download-btn"
-               href={process.env.PUBLIC_URL + "RAGHAVA_RESUME_.pdf"}
+               href={process.env.PUBLIC_URL + "/RAGHAVA_RESUME_.pdf"}
                download="RAGHAVA_RESUME_.pdf"
                onMouseMove={(e) => {
                const rect = e.currentTarget.getBoundingClientRect();
