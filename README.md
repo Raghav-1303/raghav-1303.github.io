@@ -52,11 +52,17 @@ npm
 ## ✨ Features
 
 ✔ Fully responsive design (mobile, tablet, desktop)
+
 ✔ Dark mode and light mode support
+
 ✔ Modular component-based architecture
+
 ✔ Easy customization of content and layout
+
 ✔ Project showcase section
+
 ✔ Skills and experience sections
+
 ✔ Contact and social media integration
 
 ## 📂 Project Structure
@@ -149,8 +155,11 @@ You can add screenshots of your portfolio here to show the UI and project sectio
 ## 📬 Contact
 
 LinkedIn: [Linkedin](https://www.linkedin.com/in/raghava-dev10/)
+
 GitHub: [github](https://github.com/Raghav-1303)
+
 Email: raghava.dev@gmail.com
+
 Phone: +1 817-382-9942
 
 ## ⭐ Support
