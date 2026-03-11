@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Button from "@mui/material/Button";
 import DownloadIcon from "@mui/icons-material/Download";
 import '../assets/styles/Main.scss';
-import profileImg from "../assets/images/profile.jpg";
+import profileImg from "../assets/images/myprofile.jpg";
 
 function Main() {
 
@@ -29,7 +29,7 @@ function Main() {
                variant="contained"
                startIcon={<DownloadIcon />}
                className="download-btn"
-               href={process.env.PUBLIC_URL + "/RAGHAVA_RESUME_.pdf"}
+               href={process.env.PUBLIC_URL + "/resume.pdf"}
                download="RAGHAVA_RESUME_.pdf"
                onMouseMove={(e) => {
                const rect = e.currentTarget.getBoundingClientRect();
