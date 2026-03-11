@@ -16,7 +16,7 @@ The goal of this project is to present my projects, achievements, and technical 
 ## 📸 Portfolio Preview
 
 Below is a preview of my developer portfolio showcasing my projects, skills, and professional experience.
-![Portfolio Screenshot](./src/assets/images/portfolio.png)
+![Portfolio Screenshot](./src/assets/images/screenshot.png)
 ## 🧑‍💻 About the Project
 
 This portfolio application provides an overview of:
