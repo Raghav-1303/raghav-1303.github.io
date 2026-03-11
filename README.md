@@ -60,6 +60,7 @@ npm
 ✔ Contact and social media integration
 
 ## 📂 Project Structure
+```
 portfolio/
 │
 ├── public
@@ -73,30 +74,33 @@ portfolio/
 │
 ├── package.json
 └── README.md
+```
 
 ## ⚙️ Installation & Setup
 
 To run this project locally:
 
-1️⃣ Clone the repository
-    ```bash
+### 1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/yourusername/your-repo-name.git
-    ```
+```
 
-2️⃣ Navigate to the project directory
-    ```bash
+### 2️⃣ Navigate to the project directory
+   
+```bash
 cd your-repo-name
-    ```
+```
 
-3️⃣ Install dependencies
-    ```bash
+### 3️⃣ Install dependencies
+```bash
 npm install
-    ```
+```
 
-4️⃣ Start the development server
-    ```bash
+### 4️⃣ Start the development server
+```bash
 npm start
-    ```
+```
 
 The application will run at:
 http://localhost:3000 to view the app in the browser.
