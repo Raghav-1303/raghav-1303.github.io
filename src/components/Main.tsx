@@ -20,7 +20,7 @@ function Main() {
             <a href="https://www.linkedin.com/in/raghava-dev10/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Raghava M</h1>
-          <p>Senior Full Stack .Net Developer</p>
+          <p>Senior Full Stack Developer</p>
 
           <div className="resume-buttons">
       
