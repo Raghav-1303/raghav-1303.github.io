@@ -160,7 +160,7 @@ GitHub: [github](https://github.com/Raghav-1303)
 
 Email: raghava.dev@gmail.com
 
-Phone: +1 817-382-9942
+Phone: +1 817-382-9941
 
 ## ⭐ Support
 
