@@ -15,16 +15,16 @@ function Contact() {
           {/* Phone */}
           <div className="contact-item">
             <FontAwesomeIcon icon={faPhone} className="icon" />
-            <a href="tel:+18173829942">
-              +1 817-382-9942
+            <a href="tel:+19723839611">
+              +1 972-383-9611
             </a>
           </div>
 
           {/* Email */}
           <div className="contact-item">
             <FontAwesomeIcon icon={faEnvelope} className="icon" />
-            <a href="mailto:raghava.dev10@email.com">
-              raghava.dev10@email.com
+            <a href="mailto:raghava.m1001@gmail.com">
+              raghava.m1001@gmail.com
             </a>
           </div>
 
@@ -32,11 +32,11 @@ function Contact() {
           <div className="contact-item">
             <FontAwesomeIcon icon={faLocationDot} className="icon" />
             <a
-              href="https://www.google.com/maps?q=Richardson,Texas,USA"
+              href="https://www.google.com/maps?q=Irving,Texas,USA"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Richardson, Texas, USA
+              Irving Texas, USA
             </a>
           </div>
 

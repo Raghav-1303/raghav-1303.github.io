@@ -109,7 +109,7 @@ npm start
 ```
 
 The application will run at:
-http://localhost:3000 to view the app in the browser.
+http://localhost:8080 to view the app in the browser.
 
 ## 🧩 Customization
 
@@ -154,13 +154,13 @@ You can add screenshots of your portfolio here to show the UI and project sectio
 
 ## 📬 Contact
 
-LinkedIn: [Linkedin](https://www.linkedin.com/in/raghava-dev10/)
+LinkedIn: [Linkedin](https://www.linkedin.com/in/raghava-m1001)
 
 GitHub: [github](https://github.com/Raghav-1303)
 
-Email: raghava.dev@gmail.com
+Email: raghava.m1001@gmail.com
 
-Phone: +1 817-382-9941
+Phone: +1 972-383-9611
 
 ## ⭐ Support
 

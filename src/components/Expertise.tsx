@@ -13,27 +13,39 @@ const labelsFirst = [
     "JavaScript",
     "HTML5",
     "CSS3",
-    ".NET Core",
-    "ASP.NET Web API",
-    "Node.js"
+    "Python",
+    "FastAPI",
+    "Django",
+    "Rest API",
+    "Microservices"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "Kubernetes",
     "AWS",
     "Azure",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
     "Jenkins",
+    "Git lab CI/CD",
+    "Lambda",
+    "Azure Key Vault"
     
 ];
 
 const labelsThird = [
-    "SQL Server",
-    "Oracle",
+    "postgreSQL",
+    "MySQL",
     "MongoDB",
-    "Redis"
+    "DynamoDB",
+    "Cosmos DB",
+    "Apache Airflow",
+    "Pandas",
+    "pySpark",
+    "OPenAi API",
+    "Azure OpenAI API",
+    "LLM",
+    "PyTest"
 ];
 
 function Expertise() {
@@ -44,8 +56,10 @@ function Expertise() {
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I build scalable, high-performance web applications using .NET Core, ASP.NET Web API, and Node.js for backend services, combined with Angular and React to deliver responsive, modern user experiences.</p>
+                    <h3>Full Stack Python Development</h3>
+                    <p>I build scalable full-stack applications using Python, FastAPI, Django, React.js, Angular, and TypeScript,
+                            developing responsive user interfaces and secure,
+                            high-performance backend services.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -56,8 +70,11 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>I implement CI/CD pipelines, containerized deployments, and cloud infrastructure using Docker, Kubernetes, Azure DevOps, Jenkins, and AWS to ensure scalable, reliable, and automated application delivery.</p>
+                    <h3>Cloud, DevOps & Automation</h3>
+                    <p> I design cloud-native applications and automate
+                            deployments using AWS, Azure, Docker, Kubernetes,
+                            Terraform, Jenkins, and CI/CD pipelines to deliver
+                            reliable and scalable production systems.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -68,8 +85,11 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faDatabase} size="3x"/>
-                    <h3>Database Management & Data Engineering</h3>
-                    <p>Experienced in designing, managing, and optimizing relational and NoSQL databases including SQL Server, Oracle, MySQL, MongoDB, and Redis to ensure data integrity, performance, and scalability.</p>
+                    <h3>Data Engineering & AI Integration</h3>
+                    <p> I develop data-driven applications using SQL and
+                            NoSQL databases, ETL pipelines, and AI-powered
+                            services including OpenAI and Azure OpenAI for
+                            intelligent document processing and automation.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (

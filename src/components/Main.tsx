@@ -17,10 +17,10 @@ function Main() {
         <div className="content">
           <div className="social_icons">
             <a href="https://github.com/Raghav-1303" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/raghava-dev10/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://www.linkedin.com/in/raghava-m1001/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Raghava M</h1>
-          <p>Senior Full Stack Developer</p>
+          <p>Full Stack Developer</p>
 
           <div className="resume-buttons">
       
@@ -46,7 +46,7 @@ function Main() {
 
           <div className="mobile_social_icons">
             <a href="https://github.com/Raghav-1303" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/raghava-dev10/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://www.linkedin.com/in/raghava-m1001/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
         </div>
       </div>

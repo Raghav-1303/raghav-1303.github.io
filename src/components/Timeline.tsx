@@ -16,26 +16,26 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="Aug 2024 - present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Sr. Full Stack Developer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Richardson TX</h4>
-            <p>
-              Building scalable Full-Stack applications with modern frontend, backend, and cloud technologies.
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="Aug 2023 - July 2024"
+            date="Oct 2024 - present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Full Stack Developer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Irving TX</h4>
+            <h4 className="vertical-timeline-element-subtitle">Christus Health</h4>
             <p>
-              Developing end-to-end web applications with modern frontend frameworks and scalable backend architectures, delivering reliable and high-performance solutions.
+              Built a scalable healthcare contract intelligence platform using Python, FastAPI, React, AI-powered document processing, and cloud technologies to automate contract management and compliance tracking.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Jan 2023 - Oct 2024"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Full Stack Developer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Pilgrim Bank</h4>
+            <p>
+              Built a scalable credit risk and regulatory analytics platform using Python, FastAPI, Django, AWS, and data pipelines to automate financial exposure tracking and regulatory reporting.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -44,23 +44,12 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">.NET Developer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Frisco TX</h4>
+            <h3 className="vertical-timeline-element-title">Application Developer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Hyderabad, India</h4>
             <p>
-             Building high-performance backend systems and APIs using .NET Core and modern development best practices.
+             Built responsive digital products using React.js, Python, and REST APIs, integrating backend services and databases to deliver scalable, user-friendly web applications.
             </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="Jan 2019 - Nov 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Software Developer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Hyderabad India</h4>
-            <p>
-              Delivering end-to-end software solutions by translating business requirements into efficient, secure, and production-ready applications.
-            </p>
+           
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
