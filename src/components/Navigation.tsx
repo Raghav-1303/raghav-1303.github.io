@@ -47,6 +47,11 @@ function Navigation({parentToChild, modeChange}: any) {
   }, []);
 
   const scrollToSection = (section: string) => {
+
+      window.gtag?.("event", `nav_${section}_click`, {
+    section_name: section,
+  });
+  
     console.log(section)
     const expertiseElement = document.getElementById(section);
     if (expertiseElement) {

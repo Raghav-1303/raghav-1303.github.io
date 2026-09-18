@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
@@ -7,8 +7,33 @@ import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 
 function Timeline() {
+  const historyRef = useRef<HTMLDivElement>(null);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        window.gtag?.("event", "view_history", {
+          section_name: "Career History",
+        });
+
+        observer.disconnect();
+      }
+    },
+    {
+      threshold: 0.5,
+    }
+  );
+
+  if (historyRef.current) {
+    observer.observe(historyRef.current);
+  }
+
+  return () => observer.disconnect();
+}, []);
+
   return (
-    <div id="history">
+    <div id="history" ref={historyRef}>
       <div className="items-container">
         <h1>Career History</h1>
         <VerticalTimeline>

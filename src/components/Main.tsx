@@ -7,7 +7,12 @@ import '../assets/styles/Main.scss';
 import profileImg from "../assets/images/myprofile.jpg";
 
 function Main() {
-
+const trackClick = (eventName: string) => {
+    window.gtag?.("event", eventName, {
+      section_name: "Main",
+    });
+  };
+  
   return (
     <div className="container">
       <div className="about-section">
@@ -16,8 +21,10 @@ function Main() {
         </div>
         <div className="content">
           <div className="social_icons">
-            <a href="https://github.com/Raghav-1303" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/raghava-m1001/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://github.com/Raghav-1303" target="_blank" rel="noreferrer"
+             onClick={() => trackClick("github_click")}><GitHubIcon/></a>
+            <a href="https://www.linkedin.com/in/raghava-m1001/" target="_blank" rel="noreferrer"
+             onClick={() => trackClick("linkedin_click")}><LinkedInIcon/></a>
           </div>
           <h1>Raghava M</h1>
           <p>Full Stack Developer</p>
@@ -31,6 +38,7 @@ function Main() {
                className="download-btn"
                href={process.env.PUBLIC_URL + "/RAGHAVA_FULL_STACK_DEVELOPER.pdf"}
                download="RAGHAVA_FULL_STACK_DEVELOPER.pdf"
+                onClick={() => trackClick("github_click")}
                onMouseMove={(e) => {
                const rect = e.currentTarget.getBoundingClientRect();
                const x = e.clientX - rect.left;
@@ -45,8 +53,10 @@ function Main() {
           </div>
 
           <div className="mobile_social_icons">
-            <a href="https://github.com/Raghav-1303" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/raghava-m1001/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://github.com/Raghav-1303" target="_blank" rel="noreferrer"
+             onClick={() => trackClick("github_click")}><GitHubIcon/></a>
+            <a href="https://www.linkedin.com/in/raghava-m1001/" target="_blank" rel="noreferrer"
+             onClick={() => trackClick("linkedin_click")}><LinkedInIcon/></a>
           </div>
         </div>
       </div>

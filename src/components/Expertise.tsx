@@ -1,5 +1,5 @@
-import React from "react";
-import '@fortawesome/free-regular-svg-icons'
+import React, { useEffect, useRef } from "react";
+import '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
@@ -30,7 +30,6 @@ const labelsSecond = [
     "Git lab CI/CD",
     "Lambda",
     "Azure Key Vault"
-    
 ];
 
 const labelsThird = [
@@ -49,57 +48,155 @@ const labelsThird = [
 ];
 
 function Expertise() {
-    return (
-    <div className="container" id="expertise">
-        <div className="skills-container">
-            <h1>Expertise</h1>
-            <div className="skills-grid">
-                <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Python Development</h3>
-                    <p>I build scalable full-stack applications using Python, FastAPI, Django, React.js, Angular, and TypeScript,
-                            developing responsive user interfaces and secure,
-                            high-performance backend services.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
 
-                <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>Cloud, DevOps & Automation</h3>
-                    <p> I design cloud-native applications and automate
+    const expertiseRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+
+                    window.gtag?.("event", "view_expertise", {
+                        section_name: "Expertise",
+                    });
+
+                    observer.disconnect();
+                }
+            },
+            {
+                threshold: 0.5,
+            }
+        );
+
+        if (expertiseRef.current) {
+            observer.observe(expertiseRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
+    return (
+        <div
+            ref={expertiseRef}
+            className="container"
+            id="expertise"
+        >
+
+            <div className="skills-container">
+
+                <h1>Expertise</h1>
+
+                <div className="skills-grid">
+
+                    <div className="skill">
+
+                        <FontAwesomeIcon
+                            icon={faReact}
+                            size="3x"
+                        />
+
+                        <h3>Full Stack Python Development</h3>
+
+                        <p>
+                            I build scalable full-stack applications using
+                            Python, FastAPI, Django, React.js, Angular, and
+                            TypeScript, developing responsive user interfaces
+                            and secure, high-performance backend services.
+                        </p>
+
+                        <div className="flex-chips">
+
+                            <span className="chip-title">
+                                Tech stack:
+                            </span>
+
+                            {labelsFirst.map((label, index) => (
+                                <Chip
+                                    key={index}
+                                    className="chip"
+                                    label={label}
+                                />
+                            ))}
+
+                        </div>
+
+                    </div>
+
+
+                    <div className="skill">
+
+                        <FontAwesomeIcon
+                            icon={faDocker}
+                            size="3x"
+                        />
+
+                        <h3>Cloud, DevOps & Automation</h3>
+
+                        <p>
+                            I design cloud-native applications and automate
                             deployments using AWS, Azure, Docker, Kubernetes,
                             Terraform, Jenkins, and CI/CD pipelines to deliver
-                            reliable and scalable production systems.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+                            reliable and scalable production systems.
+                        </p>
 
-                <div className="skill">
-                    <FontAwesomeIcon icon={faDatabase} size="3x"/>
-                    <h3>Data Engineering & AI Integration</h3>
-                    <p> I develop data-driven applications using SQL and
+                        <div className="flex-chips">
+
+                            <span className="chip-title">
+                                Tech stack:
+                            </span>
+
+                            {labelsSecond.map((label, index) => (
+                                <Chip
+                                    key={index}
+                                    className="chip"
+                                    label={label}
+                                />
+                            ))}
+
+                        </div>
+
+                    </div>
+
+
+                    <div className="skill">
+
+                        <FontAwesomeIcon
+                            icon={faDatabase}
+                            size="3x"
+                        />
+
+                        <h3>Data Engineering & AI Integration</h3>
+
+                        <p>
+                            I develop data-driven applications using SQL and
                             NoSQL databases, ETL pipelines, and AI-powered
                             services including OpenAI and Azure OpenAI for
-                            intelligent document processing and automation.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+                            intelligent document processing and automation.
+                        </p>
+
+                        <div className="flex-chips">
+
+                            <span className="chip-title">
+                                Tech stack:
+                            </span>
+
+                            {labelsThird.map((label, index) => (
+                                <Chip
+                                    key={index}
+                                    className="chip"
+                                    label={label}
+                                />
+                            ))}
+
+                        </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
-    </div>
     );
 }
 
