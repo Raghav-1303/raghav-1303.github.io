@@ -96,7 +96,7 @@ function Contact() {
               rel="noopener noreferrer"
               onClick={() => trackClick("location_click")}
             >
-              Irving Texas, USA
+              Irving, Texas, USA
             </a>
           </div>
 
