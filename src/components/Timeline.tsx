@@ -65,7 +65,7 @@ function Timeline() {
                   </div>
 
                   <span className="experience-date">
-                    Dec 2024 — Present
+                    May 2025 — Present
                   </span>
 
                   <h3>
@@ -135,7 +135,7 @@ function Timeline() {
                   </div>
 
                   <span className="experience-date">
-                    Jan 2023 — Dec 2024
+                    Oct 2024 — May 2024
                   </span>
 
                   <h3>
@@ -187,6 +187,73 @@ function Timeline() {
 
               </div>
             </div>
+
+
+          
+{/* =====================================
+    AT&T
+====================================== */}
+
+<div className="experience-card">
+  <div className="experience-card-inner">
+
+    {/* FRONT */}
+    <div className="experience-card-front">
+
+      <div className="experience-icon">
+        <FontAwesomeIcon icon={faBriefcase} />
+      </div>
+
+      <span className="experience-date">
+        Jan 2023 — Oct 2024
+      </span>
+
+      <h3>Python Full Stack Developer</h3>
+
+      <h4>AT&T</h4>
+
+      <div className="flip-hint">
+        View Project Details →
+      </div>
+
+    </div>
+
+    {/* BACK */}
+    <div className="experience-card-back">
+
+      <span className="back-label">
+        TELECOM PROJECT
+      </span>
+
+      <h3>AT&T</h3>
+
+      <h4>
+        Telecom Customer Management & Service Analytics Platform
+      </h4>
+
+      <p>
+        Developed telecom customer management applications
+        using Python, FastAPI, React, and TypeScript.
+        Built REST APIs, integrated PostgreSQL databases,
+        implemented Azure Functions, and supported
+        CI/CD deployments using Docker and Azure DevOps.
+      </p>
+
+      <div className="tech-tags">
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>PostgreSQL</span>
+        <span>Azure</span>
+        <span>Docker</span>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
 
 
 

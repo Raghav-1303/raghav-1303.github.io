@@ -6,6 +6,7 @@ import doctor from "../assets/images/doctor.png";
 import commerce from "../assets/images/commerce.png";
 import housing from "../assets/images/housing.png";
 import meetiq from "../assets/images/meetiq.png";
+import medquery from "../assets/images/medquery.png";
 
 import "../assets/styles/Project.scss";
 
@@ -20,6 +21,24 @@ type ProjectItem = {
 };
 
 const projects: ProjectItem[] = [
+   {
+  title: "MedQuery AI",
+  subtitle: "Intelligent Medical RAG Chatbot",
+  description:
+    "AI-powered medical chatbot that answers health-related questions using Retrieval-Augmented Generation (RAG). Built with FastAPI, React, TypeScript, OpenAI, LangChain, and Qdrant to deliver context-aware medical information through a modern chat interface.",
+  image: medquery,
+  github: "https://github.com/Raghav-1303/medquery-ai",
+  technologies: [
+    "Python",
+    "FastAPI",
+    "React",
+    "TypeScript",
+    "OpenAI",
+    "LangChain",
+    "Qdrant",
+  ],
+  featured: true,
+},
   {
     title: "MeetIQ AI",
     subtitle: "Intelligent Meeting Insights Platform",

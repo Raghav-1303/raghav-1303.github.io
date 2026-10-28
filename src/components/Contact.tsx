@@ -11,6 +11,7 @@ import {
 
 function Contact() {
   const contactRef = useRef<HTMLDivElement>(null);
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
